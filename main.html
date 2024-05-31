@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega's Food Products</title>
+    <link rel="icon" type="image/png" href="img/removebg.png">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-color: #70f4e7;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+
+        .icons {
+            margin: 0 10px;
+            font-size: 50px;
+        }
+        .card {
+            height: 850px;
+
+        }
+        .navbar {
+            margin-bottom: 20px;
+        }
+
+        .card-img-top {
+            max-height: 550px;
+            object-fit: cover;
+        }
+
+        .category-title {
+            margin: 25px 0 20px;
+            color: #0044ff;
+            background-color: white;
+            padding: 10px;
+            width: 120px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1)
+        }
+
+        .social-media-icons {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .social-media-icons i {
+            margin: 0 10px;
+            font-size: 24px;
+            color: #2e342e;
+        }
+
+        footer {
+            background-color: #70f4e7;
+            padding: 20px 0;
+        }
+
+        .todo {
+            height: 250px;
+            width: 250px;
+        }
+        .front {
+            background-color: #fecb95;
+            padding: 30px;
+            margin:15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+        }
+
+        .ppppp img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    
+        .cont {
+          background-color: white;
+          padding: 30px;
+          margin:100px;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+        }
+        
+        h1 {
+          color: #2861ff; 
+          margin-bottom: 10px;
+        }
+        
+        p {
+          line-height: 1.6;
+          margin-bottom: 20px;
+        }
+        
+        .button {
+          background-color: #FFD700; /* Yellow button */
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 16px;
+          transition: background-color 0.3s ease;
+        }
+        
+        .navbar-brand {
+            color: #4a70d8;
+        }
+        .button:hover {
+          background-color: #FFC300; /* Darker yellow on hover */
+        }
+        
+        .author {
+          font-size: 14px;
+          margin-top: 20px;
+          color: #228B22; /* Dark green author info */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-bran" href="#"><h3>Mega's Food Products</h3></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#pickles" ><h4>Pickles</h4></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#podi"><h4>Podi</h4></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#masala"><h4>Masala</h4></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#others"><h4>Others</h4></a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" onkeyup="items"  placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center ">
+                <div class="front">
+                    <img class="todo" src="img/removebg.png" alt="mega.pro">
+                    <br><br><br></br>
+                        <h1 class="">𝒲𝐸𝐿𝒞𝒪𝑀𝐸 𝒯𝒪 𝑀𝐸𝒢𝒜'𝒮</h1>
+                        <h1 class="">𝐹𝒪𝒪𝒟 𝒫𝑅𝒪𝒟𝒰𝒞𝒯𝒮</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br> </br>
+        <br> </br>
+        <br> </br>
+
+    <div class="container">
+        <h2 id="pickles" class="category-title" style="margin-left: -85px;" >Pickles</h2>
+        <div class="row">
+            <!-- Pickles Category -->
+            <div class="col-12 col-md-4 mb-4">3
+                <div class="card">
+                    <img src="img/narthangaiooruga.JPG" class="card-img-top" alt="Narthangai Pickle">
+                    <div class="card-body">
+                        <h3>Narthangai Pickle</h3>
+                        <h3>நார்த்தங்காய் ஊறுகாய்</h3>
+                        <p>100 GRAMS</p>
+                        <p><strong>RS.55</strong></p>
+                        <button class="btn btn-primary" onclick="location.href = '#section_whatsApplink'" style="background-color: green;">WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+            <!-- More Pickles -->
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/mango pickle.JPG" class="card-img-top" alt="Mango Pickle">
+                    <div class="card-body">
+                        <h3>Mango Pickle</h3>
+                        <h3>மாங்காய் ஊறுகாய்</h3>
+                        <p>100 GRAMS</p>
+                        <p><strong>RS.55</strong></p>
+                        <button class="btn btn-primary" onclick="location.href = '#section_whatsApplink'" style="background-color: green;">WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/lemon pickle.JPG" class="card-img-top" alt="Lemon Pickle">
+                    <div class="card-body">
+                        <h3>Lemon Pickle</h3>
+                        <h3>எலுமிச்சை ஊறுகாய்</h3>
+                        <p>100 GRAMS</p>
+                        <p><strong>RS.55</strong></p>
+                        <button class="btn btn-primary" onclick="location.href = '#section_whatsApplink'" style="background-color: green;">WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="podi" class="category-title" style="margin-left: -85px;" >Podi</h2>
+        <div class="row">
+            <!-- Podi Category -->
+
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/manathakkali.JPG" class="card-img-top" alt="Manathakkali Vathala Satha Podi">
+                    <div class="card-body">
+                        <h3>Manathakkali Vathal Satha Podi</h3>
+                        <h3>மணத்தக்காளி வத்தல் சாதப்பொடி</h3>
+                        <p>100 GRAMS</p>
+                        <p><strong>RS.50</strong></p>
+                        <button class="btn btn-primary" onclick="location.href = '#section_whatsApplink'" style="background-color: green;">WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/murungaiillay satha podi.JPG" class="card-img-top" alt="Murungai Keerai Satha Podi">
+                    <div class="card-body">
+                        <h3>Moringa leaves Satha Podi</h3>
+                        <h3>முருங்கை இலை சாதப்பொடி</h3>
+                        <p>100 GRAMS</p>
+                        <p><strong>RS.50</strong></p>
+                        <button class="btn btn-primary" onclick="location.href = '#section_whatsApplink'" style="background-color: green;">WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/parupu satha podi.JPG" class="card-img-top" alt="Parupu Satha Podi">
+                    <div class="card-body">
+                        <h3>Paruppu Satha Podi</h3>
+                        <h3>பருப்பு சாதப்பொடி</h3>
+                        <p>100 GRAMS</p>
+                        <p><strong>RS.40</strong></p>
+                        <button class="btn btn-primary" onclick="location.href = '#section_whatsApplink'" style="background-color: green;">WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+            <!-- More Podi Items -->
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/pirandai satha podi.JPG" class="card-img-top" alt="Pirandai Satha Podi">
+                    <div class="card-body">
+                        <h3>Pirandai Satha Podi</h3>
+                        <h3>பிரண்டை சாதப்பொடி</h3>
+                        <p>100 GRAMS</p>
+                        <p><strong>RS.50</strong></p>
+                        <button class="btn btn-primary" onclick="location.href = '#section_whatsApplink'" style="background-color: green;">WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/poondu iddly podi.JPG" class="card-img-top" alt="Poondu Idly Podi">
+                    <div class="card-body">
+                        <h3>Garlic Idly Podi</h3>
+                        <h3>பூண்டு இட்லி பொடி</h3>
+                        <p>100 GRAMS</p>
+                        <p><strong>RS.50</strong></p>
+                        <button class="btn btn-primary" onclick="location.href = '#section_whatsApplink'" style="background-color: green;">WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/ullunthu iddly podi.JPG" class="card-img-top" alt="Ulundhu Idly Podi">
+                    <div class="card-body">
+                        <h3>Ulunthu Idly Podi</h3>
+                        <h3>உளுந்து இட்லி பொடி</h3>
+                        <p>100 GRAMS</p>
+                        <p><strong>RS.40</strong></p>
+                        <button class="btn btn-primary" onclick="location.href = '#section_whatsApplink'" style="background-color: green;">WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/kariveppilai iddly podi.JPG" class="card-img-top" alt="Curry Leaf Idly Podi">
+                    <div class="card-body">
+                        <h3>Curry leaves Idly Podi</h3>
+                        <h3>கறிவேப்பிலை இட்லி பொடி</h3>
+                        <p>100 GRAMS</p>
+                        <p><strong>RS.50</strong></p>
+                        <button class="btn btn-primary" onclick="location.href = '#section_whatsApplink'" style="background-color: green;">WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/murungaiillai iddly podi.JPG" class="card-img-top" alt="Murungai Keerai Idly Podi">
+                    <div class="card-body">
+                        <h3>Moringa leaves Idly Podi</h3>
+                        <h3>முருங்கை இலை இட்லி பொடி</h3>
+                        <p>100 GRAM</p>
+                        <p><strong>RS.50</strong></p>
+                        <button class="btn btn-primary" onclick="location.href = '#section_whatsApplink'" style="background-color: green;">WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/pirandai iddly podi.JPG" class="card-img-top" alt="Pirandai Idly Podi">
+                    <div class="card-body">
+                        <h3>Pirandai Idly Podi</h3>
+                        <h3>பிரண்டை இட்லி பொடி</h3>
+                        <p>100 GRAMS</p>
+                        <p><strong>RS.50</strong></p>
+                        <button class="btn btn-primary" onclick="location.href = '#section_whatsApplink'" style="background-color: green;">WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 id="masala" class="category-title" style="margin-left: -85px;">Masala</h2>
+        <div class="row">
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/sambar podi.JPG" class="card-img-top" alt="Sambar Powder">
+                    <div class="card-body">
+                        <h3>Sambar Powder</h3>
+                        <h3>சாம்பார் பொடி</h3>
+                        <p>100 Grams</p>
+                        <p><strong>RS.65</strong></p>
+                        <button class="btn btn-primary" onclick="location.href = '#section_whatsApplink'" style="background-color: green;">WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/briyanimasala.JPG" class="card-img-top" alt="Briyani Masala">
+                    <div class="card-body">
+                        <h3>Briyani Masala</h3>
+                        <h3>பிரியாணி மசாலா</h3>
+                        <p>100 GRAMS</p>
+                        <p><strong>RS.150</strong></p>
+                        <button class="btn btn-primary" onclick="location.href = '#section_whatsApplink'" style="background-color: green;">WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 id="others" class="category-title" style="margin-left: -85px;">Others</h2>
+        <div class="row">
+
+            <!-- Others Category -->
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/parambariya arusi kanji mix.JPG" class="card-img-top"
+                        alt="Paarambariya Arisi Kanji Mix">
+                    <div class="card-body">
+                        <h3>Parambarariya Arisi Kanji Mix</h3>
+                        <h3>பாரம்பரிய அரிசி கஞ்சி மிக்ஸ்</h3>
+                        <p>1 K/G</p>
+                        <p><strong>RS.350</strong></p>
+                        <button class="btn btn-primary" onclick="location.href = '#section_whatsApplink'" style="background-color: green;">WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/sathu maavu mix.JPG" class="card-img-top" alt="Millets Sathu Mavu">
+                    <div class="card-body">
+                        <h3>Sathu Mavu mix</h3>
+                        <h3>சத்து மாவு மிக்ஸ்</h3>
+                        <p>1 K/G</p>
+                        <p><strong>RS.350</strong></p>
+                        <button class="btn btn-primary" onclick="location.href = '#section_whatsApplink'" style="background-color: green;">WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/then nelli.JPG" class="card-img-top" alt="Honey Amla">
+                    <div class="card-body">
+                        <h3>Honey Amla</h3>
+                        <h3>தேன் நெல்லி</h3>
+                        <p>1 piece</p>
+                        <p><strong>RS.08</strong></p>
+                        <button class="btn btn-primary" onclick="location.href = '#section_whatsApplink'" style="background-color: green;">WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/oil.png" class="card-img-top" alt="Herbal Oil">
+                    <div class="card-body">
+                        <h3>Herbal Oil</h3>
+                        <h3>மூலிகை எண்ணெய்</h3>
+                        <p>100 Ml</p>
+                        <p><strong>RS.120</strong></p>
+                        <button class="btn btn-primary" onclick="location.href = '#section_whatsApplink'" style="background-color: green;">WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cont">
+      <h1>How our pickles are made?</h1>
+      <p>Discover the secrets behind our pickles, crafted with traditional methods and fresh ingredients to bring authentic, homemade flavors to your table.</p>
+      <button class="button">Read more ></button>
+    </div>
+    <!-- annimations -->
+        <style>
+            .brand{
+                font-size: 18px;
+                text-align: center;
+                animation: slide-up 5s ease infinite alternate;
+            }
+            @keyframes {
+                0% {
+                    transform: translateY(0);
+                    opacity: 0.5;
+                }
+                50% {
+                    transform: translateY(-5px);
+                    opacity: 0.7;
+                }
+                100% {
+                    transform: translateY(-10px);
+                    opacity: 1;
+                }
+            }
+            .animated-paragraph {
+                font-size: 18px;
+                text-align: center;
+                animation: slide-up 2s ease infinite alternate;
+            }
+    
+            @keyframes slide-up {
+                0% {
+                    transform: translateY(0);
+                    opacity: 0.5;
+                }
+                100% {
+                    transform: translateY(-10px);
+                    opacity: 1;
+                }
+            }
+            .def {
+                color:#d000ff;
+                margin: 25px 0 20px;
+                background-color: white;
+                padding: 10px;
+                width: 120px;
+                border-radius: 10px;
+                box-shadow: 0 8px 12px rgba(0,0,0,0.1)
+            }
+            
+            .youtube-button {
+                display: inline-flex;
+                padding: 2px 2px;
+                background-color: #ff0000; /* Red color (you can change this) */
+                color: #ffffff; /* White text color */
+                text-decoration: dashed;
+                border: #ff0000;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        </style>
+        <p class="animated-paragraph">
+            THANK YOU FOR VISITING OUR SITE. PLEASE AVOID UNHYGIENIC FOODS AND HEALTH AFFECTABLE FOODS. BE HYGIENIC AND LIVE A HEALTHY LIFE.
+        </p>
+        <div >
+        <p class="def" id="section_whatsApplink" ><strong>Contact us:</strong></p></div>
+        <div class="text-center">
+            <p>
+                <h4>Mega's Food Products,Erode</h4>
+            </p>
+        </div>
+    </div>
+    <footer>
+        <div class="deff">
+            <div class="social-media-icons">
+                <h5>For Retail & Wholesale oders:<i class="fa-brands fa-whatsapp"></i><span class="text-sm">9629696516</span> </h5>
+                <h5><i class="fab fa-instagram" ></i><a href="https://www.instagram.com/megas_homemade_food_products?igsh=YmR4Y25sMXg1aXAx ">megas_homemade_food_products</a> </h5>
+               <h5> <i class="fa-solid fa-envelope"></i><a href="https://mail.google.com/mail/?view=cm&fs=1&to=annapooranisamayal@gmail.com&subject=Your%20Subject&body=Your%20Message"> annapooranisamayal@gmail.com</a></h5><h5>For more traditional & tasty Recipes: </h5><a class="youtube-button" href="https://youtube.com/@sriannapooranisamayal6829?si=NE1ly4D5wYqjEtLr "> subscribe</a>
+                
+               <h5><i class="fa-brands fa-youtube"></i><a href="https://youtube.com/@sriannapooranisamayal6829?si=NE1ly4D5wYqjEtLr ">Sri Annapoorani Samayal.</a>
+                </h5>
+            </div>
+        </div>
+        <div class="text-center"><p>&copy; 2024 Mega's Food Products. All rights reserved.</p>
+            <p class="brand"> powered by 𝓓𝓴 𝓔𝓭𝓲𝓽'𝓼</p></div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorgin="anonymous"></script>
+</body>
+
+</html>
