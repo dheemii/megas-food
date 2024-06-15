@@ -36,6 +36,15 @@
             max-height: 550px;
             object-fit: cover;
         }
+        
+        .pict {
+            height: 700px;
+            margin: 55px 0 55px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1)
+        }
 
         .pic {
             height: 600px;
@@ -44,7 +53,6 @@
             padding: 10px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1)
-
         }
 
         .category-title {
@@ -247,7 +255,18 @@
         <h2 id="satha podi" class="category-title" style="margin-left: -10px;" >Satha Podi</h2>
         <div class="row">
             <!-- Podi Category -->
-
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/PARUPPU_SATHA_PODI.jpg" class="card-img-top" alt="Paruppu Satha Podi">
+                    <div class="card-body">
+                        <h3>Paruppu Satha Podi</h3>
+                        <h3>பருப்பு சாதப்பொடி</h3>
+                        <p>100 GRAMS</p>
+                        <p><strong>RS.40</strong></p>
+                        <button class="btn btn-primary" onclick="location.href = '#section_whatsApplink'" style="background-color: green;">WhatsApp</button>
+                    </div>
+                </div>
+            </div>
             <div class="col-12 col-md-4 mb-4">
                 <div class="card">
                     <img src="img/manathakkali.JPG" class="card-img-top" alt="Manathakkali Vathala Satha Podi">
@@ -325,6 +344,18 @@
             <!-- Idly Podi Items -->
             <div class="col-12 col-md-4 mb-4">
                 <div class="card">
+                    <img src="img/ullunthu iddly podi.JPG" class="card-img-top" alt="Ulundhu Idly Podi">
+                    <div class="card-body">
+                        <h3>Ulunthu Idly Podi</h3>
+                        <h3>உளுந்து இட்லி பொடி</h3>
+                        <p>100 GRAMS</p>
+                        <p><strong>RS.40</strong></p>
+                        <button class="btn btn-primary" onclick="location.href = '#section_whatsApplink'" style="background-color: green;">WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card">
                     <img src="img/poondu iddly podi.JPG" class="card-img-top" alt="Poondu Idly Podi">
                     <div class="card-body">
                         <h3>Garlic Idly Podi</h3>
@@ -343,18 +374,6 @@
                         <h3>எள்ளு இட்லி பொடி</h3>
                         <p>100 GRAMS</p>
                         <p><strong>RS.50</strong></p>
-                        <button class="btn btn-primary" onclick="location.href = '#section_whatsApplink'" style="background-color: green;">WhatsApp</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4 mb-4">
-                <div class="card">
-                    <img src="img/ullunthu iddly podi.JPG" class="card-img-top" alt="Ulundhu Idly Podi">
-                    <div class="card-body">
-                        <h3>Ulunthu Idly Podi</h3>
-                        <h3>உளுந்து இட்லி பொடி</h3>
-                        <p>100 GRAMS</p>
-                        <p><strong>RS.40</strong></p>
                         <button class="btn btn-primary" onclick="location.href = '#section_whatsApplink'" style="background-color: green;">WhatsApp</button>
                     </div>
                 </div>
@@ -458,6 +477,34 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4 mb-4">
+                <div class="pict">
+                    <img src="img/Pure Chilly Powder.jpg" class="card-img-top" alt="Pure Chilly Powder">
+                    <div class="card-body">
+                        <h3>Pure Chilly Powder</h3>
+                        <h3></h3><!--tamil-->
+                        <p><strong>1 kg</strong></p>
+                        <p><strong>RS.400</strong></p>
+                        <button class="btn btn-primary" onclick="location.href = '#section_whatsApplink'" style="background-color: green;">WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="pict">
+                    <img src="img/Coriander powder.jpg" class="card-img-top" alt="Coriander powder">
+                    <div class="card-body">
+                        <h3>Coriander powder</h3>
+                        <h3>மல்லி தூள்</h3>
+                        <p><strong>1 kg</strong></p>
+                        <p><strong>RS.250</strong></p>
+                        <button class="btn btn-primary" onclick="location.href = '#section_whatsApplink'" style="background-color: green;">WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
             <!-- Masala Items-->
             <div class="col-12 col-md-4 mb-4">
                 <div class="card">
@@ -614,6 +661,16 @@
                 cursor: pointer;
             }
         </style>
+        <script>
+            document.addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+            }, false);    
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'F12') {
+                    e.preventDefault();
+                }
+            }, false);
+        </script>        
         <p class="animated-paragraph">
             THANK YOU FOR VISITING OUR SITE. PLEASE AVOID UNHYGIENIC FOODS AND HEALTH AFFECTABLE FOODS. BE HYGIENIC AND LIVE A HEALTHY LIFE.
         </p>
